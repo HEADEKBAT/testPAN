@@ -1,0 +1,44 @@
+.footer {
+    &__wrapper {
+        margin-top: 17px;
+        padding: 38px 0px 93px 0px;
+        border-top: 1px solid #8f95ac;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__addres {
+        flex: 0 0 33.3%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+        span {
+            width: 288px;
+        }
+    }
+
+    &__phone {
+        flex: 0 0 33.3%;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #2c2e3e;
+        text-align: center;
+        @media (max-width: 950px) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__callback {
+        flex: 0 0 33.3%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ff2d23;
+        text-align: right;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

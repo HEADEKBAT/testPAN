@@ -1,0 +1,132 @@
+.header {
+    background: #2c2e3e;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+        @media (max-width: 770px) {
+            padding: 14px 0px;
+        }
+    }
+
+    &__logo {
+        flex: 0 0 auto;
+        @media (max-width: 770px) {
+            flex: 0 0 58px;
+        }
+    }
+}
+
+.dropdown-toggle {
+    &--active {
+        background: #ff2d23 !important;
+    }
+}
+.dropdown {
+    position: relative;
+    margin-right: 10px;
+    @media (max-width: 770px) {
+        margin-right: 0;
+    }
+}
+.dropdown-menu {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
+.menu-active {
+    display: block !important;
+}
+.dropdown-toggle {
+    position: relative;
+
+    &:after {
+        content: "";
+        background: url("./img/nav-arrow.svg") 0 0 no-repeat;
+        // background-size: 80%;
+        position: absolute;
+        top: 42%;
+        right: 11px;
+        width: 10px;
+        height: 6px;
+        z-index: 1;
+        transition: all 0.2s ease 0s;
+        @media (max-width: 770px) {
+            right: 9px;
+        }
+    }
+
+    &--active {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.dropdown-menu {
+    padding: 3px 21px 1px 31px;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    top: 68px;
+    left: -15px;
+    background: #2c2e3e;
+    border-radius: 9px;
+    background-clip: padding-box;
+    // border: 1px solid rgba(0, 0, 0, 0.15);
+    li {
+        padding-right: 20px;
+        &:first-child {
+            margin-right: 0px !important;
+        }
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-bottom: 0.5px solid #8f95ac;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+            .dropdown-item {
+                padding-right: 22px;
+            }
+        }
+    }
+}
+.menu-active {
+    display: grid !important;
+}
+.dropdown-item {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 23px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+
+    &__image {
+        flex: 0 0 auto;
+        padding-right: 12px;
+        img {
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    &__info {
+        h5 {
+            color: #fff;
+        }
+        p {
+            display: inline-block;
+            color: #fff;
+            margin-top: 8px;
+            color: #8f95ac;
+        }
+    }
+}

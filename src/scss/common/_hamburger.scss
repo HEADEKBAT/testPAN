@@ -1,0 +1,45 @@
+.hamburger {
+    position: relative;
+    width: 40px;
+    height: 28px;
+
+    span {
+        width: 40px;
+        height: 4px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        transition: .3s ease;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            top: 12px;
+        }
+
+        &:nth-child(3) {
+            top: 24px;
+        }
+    }
+
+    &.active span {
+        width: 44px;
+        top: 12px;
+        left: 0;
+        
+        &:nth-child(1) {
+            left: 50%;
+            width: 0;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(225deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(135deg);
+        }
+    }
+}

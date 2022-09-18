@@ -1,0 +1,31 @@
+/* ==========================================================================
+    LIBS
+    ========================================================================== */
+@import "~aos/dist/aos.css";
+@import "~swiper/swiper-bundle.css";
+
+/* ==========================================================================
+    SPECIFICATION
+    ========================================================================== */
+@import "spec/fonts";
+@import "spec/variables";
+@import "spec/mixins";
+@import "spec/global";
+@import "spec/visually-hidden";
+
+/* ==========================================================================
+    COMMON ELEMENTS
+    ========================================================================== */
+@import "common/btn";
+@import "common/header";
+@import "common/nav";
+@import "common/hamburger";
+@import "common/footer";
+@import "common/select";
+@import "common/checkbox";
+
+/* ==========================================================================
+    MODULES
+    ========================================================================== */
+@import "modules/main-offer";
+@import "modules/formBlock";

@@ -1,0 +1,14 @@
+<%=_.template(require('../parts/header.html'))({
+    title: "title",
+    menu: {}
+}) %>
+
+<main class="site-main">
+    <section class="main-offer">
+        <%=_.template(require('../parts/formBlock.html'))() %>
+        <%=_.template(require('../parts/slider.html'))() %>
+        <%=_.template(require('../parts/content.html'))() %>
+    </section><!-- /.main-offer -->
+</main><!-- / .site-main -->
+
+<%=_.template(require('../parts/footer.html'))() %>
